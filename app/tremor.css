@@ -1,0 +1,34 @@
+/* tremor.css */
+:root {
+  --tremor-background-default: transparent; /* Makes card backgrounds transparent */
+}
+
+.dark {
+  --tremor-background-default: transparent;
+  --tremor-content: #9ca3af; /* Light gray for general text */
+  --tremor-content-emphasis: #ffffff; /* White for emphasized text like titles */
+  --tremor-border: rgba(255, 255, 255, 0.1); /* Lighter border for dark mode */
+  --tremor-ring: rgba(255, 255, 255, 0.2); /* Lighter ring for focus states */
+}
+
+/* Chart axis text styling */
+.tremor-chart text {
+  fill: #ffffff !important;
+}
+
+/* Specific targeting for axis labels */
+.tremor-AxisBottom text,
+.tremor-AxisLeft text {
+  fill: #ffffff !important;
+}
+
+/* Tooltip text styling */
+.tremor-Tooltip {
+  color: #ffffff !important;
+}
+
+/* Chart grid lines (optional - makes them more subtle) */
+.tremor-chart .recharts-cartesian-grid-horizontal line,
+.tremor-chart .recharts-cartesian-grid-vertical line {
+  stroke: rgba(255, 255, 255, 0.1) !important;
+}
